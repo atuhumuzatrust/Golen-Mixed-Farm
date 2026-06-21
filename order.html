@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Place Order - Golen Mixed Farm</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="order-container">
+
+<div class="order-card">
+
+<h1>🛒 Place Your Order</h1>
+<p>Fresh farm products delivered to your doorstep.</p>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<select id="product" required>
+<option value="">Select Product</option>
+<option>Eggs</option>
+<option>Honey</option>
+<option>Onions</option>
+<option>Rice</option>
+<option>Beans</option>
+<option>Maize Flour</option>
+<option>Millet Flour</option>
+<option>Vegetables</option>
+<option>Fruits</option>
+</select>
+
+<input type="number" id="quantity" placeholder="Quantity" required>
+
+<button type="button" onclick="sendOrder()">
+Order via WhatsApp
+</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
