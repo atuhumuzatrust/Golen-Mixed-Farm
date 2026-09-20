@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inquire | Golen Mixed Farm</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">🌾</span>
+
+            <div class="logo-text">
+
+                <strong>GOLEN</strong>
+
+                <small>MIXED FARM LTD</small>
+
+                <em>Real Farm Products</em>
+
+            </div>
+
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="contact.html">Branches</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="order.html" class="nav-order">
+                💬 Inquire via WhatsApp
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+    <div class="page-hero-content">
+
+        <span>GET IN TOUCH</span>
+
+        <h1>Tell Us What You Need</h1>
+
+        <p>
+            Send us your request and we'll confirm the
+            current price, availability and delivery options.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="order-section">
+
+    <div class="order-card">
+
+        <div class="order-heading">
+
+            <span class="section-label">
+                PRODUCT INQUIRY
+            </span>
+
+            <h2>Send Your Request</h2>
+
+            <p>
+                Prices change depending on availability,
+                season and quantity. We'll confirm the
+                current price with you on WhatsApp.
+            </p>
+
+        </div>
+
+
+        <form id="orderForm">
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+256..."
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="product">
+                    Product
+                </label>
+
+                <select id="product" required>
+
+                    <option value="">
+                        Select a product
+                    </option>
+
+                    <option value="Farm Fresh Eggs">
+                        Farm Fresh Eggs
+                    </option>
+
+                    <option value="Pure Honey">
+                        Pure Honey
+                    </option>
+
+                    <option value="Fresh Onions">
+                        Fresh Onions
+                    </option>
+
+                    <option value="Rice">
+                        Rice
+                    </option>
+
+                    <option value="Maize Flour">
+                        Maize Flour
+                    </option>
+
+                    <option value="Millet Flour">
+                        Millet Flour
+                    </option>
+
+                    <option value="Groundnuts">
+                        Groundnuts
+                    </option>
+
+                    <option value="Beans">
+                        Beans
+                    </option>
+
+                    <option value="Farm Ghee">
+                        Farm Ghee
+                    </option>
+
+                    <option value="Fresh Fruits">
+                        Fresh Fruits
+                    </option>
+
+                    <option value="Fresh Vegetables">
+                        Fresh Vegetables
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="quantity">
+                    Quantity
+                </label>
+
+                <input
+                    type="text"
+                    id="quantity"
+                    placeholder="e.g. 2 trays, 10kg, 5 litres"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    Delivery Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Where should we deliver?"
+                >
+
+            </div>
+
+
+            <button
+                type="button"
+                class="order-submit"
+                onclick="sendOrder()"
+            >
+                💬 Continue to WhatsApp
+            </button>
+
+
+            <p id="message"></p>
+
+
+        </form>
+
+
+        <div class="order-note">
+
+            <strong>ℹ️ Please note</strong>
+
+            <p>
+                Product prices are not displayed because they
+                may change according to market conditions,
+                season, availability and order quantity.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        © 2026 Golen Mixed Farm. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", function () {
+
+    mainNav.classList.toggle("show");
+
+    menuToggle.textContent =
+        mainNav.classList.contains("show") ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
